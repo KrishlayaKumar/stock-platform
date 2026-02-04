@@ -1,11 +1,11 @@
 # 📈 Stock Recommendation System (Full-Stack AI Project)
 
-🔗 **Live Application:**  
-👉 https://stock-recommendation-system.onrender.com/
+ **Live Application:**  
+ https://stock-recommendation-system.onrender.com/
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Stock market decisions are often influenced by emotions, incomplete information, and delayed analysis.  
 Retail investors usually lack access to:
@@ -14,12 +14,12 @@ Retail investors usually lack access to:
 - Financial news sentiment interpretation  
 - A unified system that converts analysis into actionable insights  
 
-### 🎯 Objective
+###  Objective
 To build an **end-to-end intelligent stock recommendation platform** that analyzes historical stock prices and financial news sentiment to generate **BUY / HOLD / SELL** recommendations through a user-friendly web interface.
 
 ---
 
-## 💡 Solution Overview
+##  Solution Overview
 
 This project is a **full-stack AI-powered web application** that:
 
@@ -33,16 +33,16 @@ This project is a **full-stack AI-powered web application** that:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
-# 📈 Stock Recommendation System (Full-Stack AI Project)
+#  Stock Recommendation System (Full-Stack AI Project)
 
-🔗 **Live Application:**  
-👉 https://stock-recommendation-system.onrender.com/
+ **Live Application:**  
+ https://stock-recommendation-system.onrender.com/
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Stock market decisions are often influenced by emotions, incomplete information, and delayed analysis.  
 Retail investors usually lack access to:
@@ -51,12 +51,12 @@ Retail investors usually lack access to:
 - Financial news sentiment interpretation  
 - A unified system that converts analysis into actionable insights  
 
-### 🎯 Objective
+###  Objective
 To build an **end-to-end intelligent stock recommendation platform** that analyzes historical stock prices and financial news sentiment to generate **BUY / HOLD / SELL** recommendations through a user-friendly web interface.
 
 ---
 
-## 💡 Solution Overview
+##  Solution Overview
 
 This project is a **full-stack AI-powered web application** that:
 
@@ -70,7 +70,7 @@ This project is a **full-stack AI-powered web application** that:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
     User (Browser)
     ↓
@@ -87,7 +87,7 @@ This project is a **full-stack AI-powered web application** that:
 
 ---
 
-## ⚙️ Technology Stack
+##  Technology Stack
 
 ### 🔹 Backend
 - Python
@@ -118,21 +118,21 @@ This project is a **full-stack AI-powered web application** that:
 
 ---
 
-## 🧩 Key Features
+##  Key Features
 
-### ✅ Stock Data Analysis
+###  Stock Data Analysis
 - Uses a **pre-trained fixed list of stocks**
 - Dropdown-based selection to prevent invalid inputs
 
-### ✅ Machine Learning Prediction
+###  Machine Learning Prediction
 - Predicts **next-day price movement** (UP / DOWN)
 - Outputs prediction confidence score
 
-### ✅ News Sentiment Analysis
+###  News Sentiment Analysis
 - Fetches latest financial news headlines
 - Classifies sentiment as **Positive / Neutral / Negative**
 
-### ✅ Recommendation Engine
+###  Recommendation Engine
 Final recommendation is generated using:
 - Predicted price direction
 - Model confidence threshold
@@ -143,7 +143,7 @@ Outputs:
 - 🟡 HOLD  
 - 🔴 SELL  
 
-### ✅ Modern User Interface
+###  Modern User Interface
 - Animated landing page (About section)
 - Scroll-based reveal & parallax background
 - Candlestick price chart
@@ -153,7 +153,7 @@ Outputs:
 
 ---
 
-## 🖥️ User Flow
+##  User Flow
 
 1. Application opens with **About Us** landing section
 2. User scrolls down to the analyzer
@@ -168,7 +168,7 @@ Outputs:
 
 ---
 
-## 🚀 Deployment Details
+##  Deployment Details
 
 The application is deployed using **Render (Free Tier)**.
 
@@ -206,4 +206,5 @@ The application is deployed using **Render (Free Tier)**.
       ├── models/                 # Trained ML models
       ├── requirements.txt
       └── README.md
+
 
