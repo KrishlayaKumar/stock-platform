@@ -167,6 +167,22 @@ Outputs:
    - Candlestick price chart
 
 ---
+## DIAGRAM -
+  ### Workflow Diagram (END-TO-END)
+  
+  ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/85ffdbbe7e258126b5169aee4c8134aa82bdd459/Screenshot%202026-02-05%20005031.png)
+  
+  ### ARCHITECTURE DIAGRAM (SYSTEM DESIGN)
+  
+  ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/be0b2879b830e15af148786df90be4aa7c0237df/Screenshot%202026-02-05%20005504.png)
+  
+  ### SEQUENCE DIAGRAM (EXECUTION FLOW)
+  
+  ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/907afdf95aef596afa7e07e1d4e7277c29e382cd/Screenshot%202026-02-05%20005858.png)
+  
+  ### DEPLOYMENT DIAGRAM (INFRASTRUCTURE)
+  
+  ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/70a71d29d291b32f9ed5c3e3df10794eb1c77699/Screenshot%202026-02-05%20010025.png)
 
 ##  Deployment Details
 
@@ -213,3 +229,4 @@ The application is deployed using **Render (Free Tier)**.
 ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003548.png)
 ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003601.png)
 ![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003611.png)
+
