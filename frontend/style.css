@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #1a002b, #2b003d, #3d001a);
+  color: #eaeaea;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  min-height: 100vh;
+  padding: 80px 60px;
+  width: 100%;
+}
+
+/* ---------- PARALLAX ---------- */
+.about {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(160, 0, 255, 0.35),
+    rgba(255, 0, 80, 0.25),
+    transparent 70%
+  );
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  text-align: center;
+  animation: fadeUp 1.2s ease;
+}
+
+.about h1 {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.info {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+.github {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff416c, #7f00ff);
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.github:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255,65,108,0.6);
+}
+
+.scroll-hint {
+  margin-top: 40px;
+  opacity: 0.7;
+  animation: bounce 1.8s infinite;
+}
+
+/* ---------- APP ---------- */
+.app {
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ---------- EYES ---------- */
+.eyes {
+  display: flex;
+  gap: 8px;
+}
+
+.eye {
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  margin: 100px auto 0;
+  background: rgba(20,20,30,0.9);
+  padding: 28px;
+  border-radius: 14px;
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+select, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: linear-gradient(135deg, #ff416c, #7f00ff);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- RESULT ---------- */
+.result {
+  margin: 40px auto 0;
+  background: rgba(20,20,30,0.9);
+  padding: 22px;
+  border-radius: 12px;
+  width: 380px;
+  animation: fadeUp 0.6s ease;
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.buy { background: #2ecc71; }
+.hold { background: #f1c40f; color: black; }
+.sell { background: #e74c3c; }
+
+/* ---------- LOADER ---------- */
+.loader {
+  margin: 30px auto;
+  border: 5px solid rgba(255,255,255,0.2);
+  border-top: 5px solid #ff416c;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  animation: spin 1s linear infinite;
+}
+
+/* ---------- CHART ---------- */
+.chart {
+  max-width: 90%;
+  margin: 40px auto;
+  background: rgba(20,20,30,0.9);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ---------- UTILS ---------- */
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  pointer-events: none;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.app {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  50% { transform: translateY(10px); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  select, button {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .result {
+    width: 90%;
+  }
+}

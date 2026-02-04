@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Recommendation System</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ================= ABOUT / LANDING ================= -->
+<section id="about" class="section about">
+  <div class="parallax-bg"></div>
+
+  <div class="about-content">
+    <h1>📈 Stock Recommendation System</h1>
+
+    <p class="subtitle">
+      An AI-powered platform that analyzes historical stock prices,
+      financial news sentiment, and generates intelligent
+      BUY / HOLD / SELL recommendations.
+    </p>
+
+    <div class="info">
+      <p><b>Built by:</b> Krishlaya Kumar</p>
+      <p>
+        <b>Data Sources:</b><br>
+        • Yahoo Finance – Historical Prices<br>
+        • Yahoo Finance – Financial News
+      </p>
+    </div>
+
+    <a class="github" href="https://github.com/KrishlayaKumar" target="_blank">
+      🔗 View more projects on GitHub
+    </a>
+
+    <div class="scroll-hint">⬇ Scroll down to analyze stocks</div>
+  </div>
+</section>
+
+<!-- ================= MAIN APP ================= -->
+<section id="app" class="section app hidden">
+
+  <header>
+    <h2>Analyze a Stock</h2>
+
+    <div class="top-right">
+      <div class="eyes">
+        <div class="eye"><div class="pupil"></div></div>
+        <div class="eye"><div class="pupil"></div></div>
+      </div>
+      <div id="time"></div>
+    </div>
+  </header>
+
+  <div class="card">
+    <select id="stockSelect">
+      <option value="">Select Stock</option>
+      <option>AAPL</option>
+      <option>AMZN</option>
+      <option>GOOGL</option>
+      <option>MSFT</option>
+      <option>TSLA</option>
+      <option>RELIANCE.NS</option>
+      <option>TCS.NS</option>
+      <option>INFY.NS</option>
+      <option>HDFCBANK.NS</option>
+      <option>ICICIBANK.NS</option>
+    </select>
+
+    <button onclick="analyzeStock()">Analyze</button>
+  </div>
+
+  <div id="loader" class="loader hidden"></div>
+  <div id="result" class="result hidden"></div>
+
+  <canvas id="priceChart" class="chart hidden"></canvas>
+</section>
+
+<footer>
+  ⚠️ Disclaimer: This system is for educational purposes only.
+  Do not make financial decisions solely based on this application.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
