@@ -208,3 +208,8 @@ The application is deployed using **Render (Free Tier)**.
       └── README.md
 
 
+## Application image
+
+![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003548.png)
+![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003601.png)
+![Alt Text](https://github.com/KrishlayaKumar/stock-platform/blob/9daef1a5302ec533eb3b04a0a329e26b3bd4a88e/Screenshot%202026-02-05%20003611.png)
